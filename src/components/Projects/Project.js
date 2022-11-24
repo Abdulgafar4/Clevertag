@@ -1,4 +1,4 @@
-import { Tabs, Container, Text, createStyles, Center, Card, Image } from "@mantine/core";
+import { Tabs, Container, Text, createStyles, Center, Card, Image, Anchor } from "@mantine/core";
 import { other, personal, team } from "./data";
 
 import "./style.css"
@@ -29,9 +29,7 @@ export function Project() {
         </Center>
         <Tabs color="cyan" variant="pills" radius="md" defaultValue="client">
           <Tabs.List position="center" grow="true">
-            <Tabs.Tab value="personal" >
-              Personal Project
-            </Tabs.Tab>
+            <Tabs.Tab value="personal">Personal Project</Tabs.Tab>
             <Tabs.Tab value="client">Clients Project</Tabs.Tab>
             <Tabs.Tab value="team">Team Project</Tabs.Tab>
           </Tabs.List>
@@ -51,6 +49,7 @@ export function Project() {
                     style={{ cursor: "pointer" }}
                     className="container"
                   >
+                    <Anchor href={data.link} target="_blank">
                     <Image
                       src={data.src}
                       className="image"
@@ -60,6 +59,7 @@ export function Project() {
                     <div className="middle">
                       <Text className="text">{data.desc}</Text>
                     </div>
+                    </Anchor>
                   </Card.Section>
                 </Card>
               ))}
@@ -81,6 +81,8 @@ export function Project() {
                     style={{ cursor: "pointer" }}
                     className="container"
                   >
+                    <Anchor href={data.link} target="_blank">
+
                     <Image
                       src={data.src}
                       className="image"
@@ -90,6 +92,7 @@ export function Project() {
                     <div className="middle">
                       <Text className="text">{data.desc}</Text>
                     </div>
+                    </Anchor>
                   </Card.Section>
                 </Card>
               ))}
@@ -111,15 +114,17 @@ export function Project() {
                     style={{ cursor: "pointer" }}
                     className="container"
                   >
-                    <Image
-                      src={data.src}
-                      className="image"
-                      height={200}
-                      alt="Norway"
-                    />
-                    <div className="middle">
-                      <Text className="text">{data.desc}</Text>
-                    </div>
+                    <Anchor href={data.link} target="_blank">
+                      <Image
+                        src={data.src}
+                        className="image"
+                        height={200}
+                        alt="Norway"
+                      />
+                      <div className="middle">
+                        <Text className="text">{data.desc}</Text>
+                      </div>
+                    </Anchor>
                   </Card.Section>
                 </Card>
               ))}
