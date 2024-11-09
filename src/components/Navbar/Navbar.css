@@ -17,3 +17,7 @@ a {
 a:hover {
   color: var(--primary);
 }
+
+.nav-icon {
+  padding: 20px;
+}

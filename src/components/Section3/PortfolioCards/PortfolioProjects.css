@@ -13,7 +13,6 @@
   margin: 10px;
   border: 1px solid var(--light);
   transition: 0.4s;
-
   position: relative;
   cursor: var(--pointer-OL);
 }
@@ -84,5 +83,16 @@
     width: 100%;
     height: 100%;
     opacity: 100%;
+  }
+}
+
+@media (min-width: 2900px) {
+  .project-card {
+    width: 45%;
+  }
+
+  .projects-container {
+    width: 50%;
+    margin: 0px auto;
   }
 }

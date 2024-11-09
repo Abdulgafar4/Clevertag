@@ -53,7 +53,7 @@ const testimonials = [
 
 export default function Testimonial() {
   return (
-    <>
+    <div id="testmonial" className="carousel-root">
       <h3>Those I've Collaborated With</h3>
       <Carousel
         infiniteLoop={true}
@@ -63,12 +63,12 @@ export default function Testimonial() {
         interval={5000}
       >
         {testimonials.map((testimonial, index) => (
-          <div key={index} id="testimonial">
-            <img
-              src={testimonial.image}
-              alt={`${testimonial.name}_testimonial`}
-            />
+          <div key={index} id="testimonial" className="myCarousel-root">
             <div className="myCarousel">
+              <img
+                src={testimonial.image}
+                alt={`${testimonial.name}_testimonial`}
+              />
               <h3>{testimonial.name}</h3>
               <p className="job-info">{`${testimonial.jobTitle} at ${testimonial.company}`}</p>
               <p>{testimonial.text}</p>
@@ -84,6 +84,6 @@ export default function Testimonial() {
           </div>
         ))}
       </Carousel>
-    </>
+    </div>
   );
 }

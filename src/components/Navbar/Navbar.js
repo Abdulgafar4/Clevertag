@@ -6,10 +6,16 @@ export const socialIcons = [
     href="https://www.linkedin.com/in/clevertag/"
     target="_blank"
     rel="noreferrer"
+    className="nav-icon"
   >
     <FaLinkedinIn />
   </a>,
-  <a href="https://github.com/Abdulgafar4" target="_blank" rel="noreferrer">
+  <a
+    href="https://github.com/Abdulgafar4"
+    target="_blank"
+    rel="noreferrer"
+    className="nav-icon"
+  >
     <FaGithub />
   </a>,
 ];

@@ -30,12 +30,12 @@
   width: 70px;
   height: 70px;
   opacity: 50%;
-  filter: grayscale(100%);
+  filter: grayscale(50%);
   transition: 0.4s;
 }
 
 .brand-logo-container:hover .brand-logo {
-  transform: scale(1.5);
+  transform: scale(2.5);
   filter: grayscale(0%);
   opacity: 100%;
 }
