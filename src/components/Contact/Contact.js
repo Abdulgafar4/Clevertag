@@ -41,7 +41,7 @@ function Contact() {
 
   return (
     <div className="contactWrapper" id="contact">
-      <h3>Message Me</h3>
+      <h3 className="font-bold text-2xl my-3">Message Me</h3>
       <form className="form" onSubmit={handleSubmit}>
         <label htmlFor="name">Full Name </label>
         <input
@@ -52,6 +52,7 @@ function Contact() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
+          className="pl-3"
         />
         <label htmlFor="email">Email </label>
         <input
@@ -62,6 +63,7 @@ function Contact() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
+          className="pl-3"
         />
         <label htmlFor="tel">Number </label>
         <input
@@ -71,16 +73,17 @@ function Contact() {
           name="tel"
           value={number}
           onChange={(e) => setNumber(e.target.value)}
+          className="pl-3"
         />
         <label htmlFor="message">Message </label>
         <textarea
-          type="text"
           name="message"
           id="message"
           placeholder="Type Your Message Here"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           required
+          className="pl-3"
         ></textarea>
         <button type="submit">Submit</button>
       </form>

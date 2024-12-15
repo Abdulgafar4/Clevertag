@@ -11,10 +11,11 @@
   height: 500px;
   padding: 10px;
   margin: 10px;
-  border: 1px solid var(--light);
+  border: 1px solid var(--primary);
   transition: 0.4s;
   position: relative;
   cursor: var(--pointer-OL);
+  box-sizing: content-box;
 }
 
 .project-card-title {
@@ -32,7 +33,7 @@
 .project-card:hover .project-card-title {
   background-color: var(--primary);
   color: var(--light);
-  width: 35%;
+  width: 45%;
   opacity: 100%;
 }
 

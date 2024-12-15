@@ -25,13 +25,11 @@
 
 
  .service-card {
-     display: column;
      border: 2px solid var(--primary);
      padding: 5px;
      margin: 5px;
      width: 250px;
      color: var(--primary);
-     cursor: var(--pointer);
  }
 
 

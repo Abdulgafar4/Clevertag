@@ -1,21 +1,8 @@
 .logo {
-  color: var(--light);
   transition: 0.4s;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-}
-
-.logo:hover {
-  color: var(--primary);
-}
-
-a {
-  color: var(--light);
-}
-
-a:hover {
-  color: var(--primary);
 }
 
 .nav-icon {

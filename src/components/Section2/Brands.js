@@ -8,18 +8,18 @@ import dot from "../../images/brands-dot.svg";
 function Brands() {
   const brandLogoList = [worthsight, pencildigital, omnienergy];
   return (
-    <div className="brands-container" id="client">
-      <div className="brand-heading">
-        <h2>
+    <div className="flex flex-col items-center justify-between" id="client">
+      <div className="flex flex-col items-center w-1/2">
+        <h2 className="pb-4 font-bold text-2xl my-3">
           Professional Experience: Companies I've Collaborated With and Where
           I’ve Made an Impact
         </h2>
         <img src={dot} alt="" />
       </div>
-      <div className="brand-logo-list">
+      <div className="w-1/2 m-3 flex flex-col md:flex-row items-center justify-between ">
         {brandLogoList.map((logo) => (
-          <div className="brand-logo-container" key={logo}>
-            <img className="brand-logo" src={logo} alt="clients" />
+          <div className="brand-logo-container w-[70%] flex items-center justify-center m-2.5 h-20 cursor-[var(--pointer)]" key={logo}>
+            <img className="brand-logo w-[90%] xl:w-[70%] h-16 opacity-100" src={logo} alt="clients" />
           </div>
         ))}
       </div>

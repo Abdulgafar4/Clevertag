@@ -28,6 +28,7 @@ function Services() {
       icon: <SiExpo />,
       title: "Expo Native",
     },
+
     {
       icon: <SiAntdesign />,
       title: "UI Design",
@@ -36,14 +37,22 @@ function Services() {
       icon: <SiTailwindcss />,
       title: "Tailwind CSS",
     },
+    // {
+    //   icon: <SiExpo />,
+    //   title: "AngularJS",
+    // },
+    // {
+    //   icon: <SiExpo />,
+    //   title: "VueJS",
+    // },
   ];
 
   return (
     <div className="service-container" id="service">
-      <h2>My Frontend Toolkit</h2>
+      <h2 className="font-bold text-2xl my-3">My Frontend Toolkit</h2>
       <div className="service-cards-container">
         {serviceList.map(({ icon, title }) => (
-          <div className="service-card">
+          <div className="service-card flex flex-col items-center justify-center" key={icon}>
             <div className="service-card-icon">{icon}</div>
             <h3>{title}</h3>
           </div>

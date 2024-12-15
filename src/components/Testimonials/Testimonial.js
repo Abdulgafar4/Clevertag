@@ -54,13 +54,14 @@ const testimonials = [
 export default function Testimonial() {
   return (
     <div id="testmonial" className="carousel-root">
-      <h3>Those I've Collaborated With</h3>
+      <h3 className="font-bold text-2xl my-3">Those I've Collaborated With</h3>
       <Carousel
         infiniteLoop={true}
         showThumbs={false}
         showStatus={false}
         autoPlay={true}
         interval={5000}
+        showArrows={false}
       >
         {testimonials.map((testimonial, index) => (
           <div key={index} id="testimonial" className="myCarousel-root">

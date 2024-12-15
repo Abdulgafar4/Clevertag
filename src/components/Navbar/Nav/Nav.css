@@ -6,10 +6,9 @@
   height: 75px;
   position: fixed;
   top: 0;
-  min-width: 412px;
   width: 100vw;
   z-index: 10001;
-  background-color: rgba(0, 0, 0, 0.703);
+  background-color: rgba(255, 255, 255);
 }
 
 .nav-icon-container {
@@ -37,27 +36,13 @@
   width: 50px;
   height: 3px;
   margin: 5px auto;
-  background-color: var(--light);
+  background-color: var(--primary);
   border-radius: 10px;
   transition: 0.4s;
 }
 
 .hamburger-container:hover span {
   background-color: var(--primary);
-}
-
-.hamburger-container:hover span:nth-child(1) {
-  transform: translateX(10px);
-  rotate: 45deg;
-}
-
-.hamburger-container:hover span:nth-child(2) {
-  display: none;
-}
-
-.hamburger-container:hover span:nth-child(3) {
-  transform: translate(5px, 5px);
-  rotate: -45deg;
 }
 
 .close {

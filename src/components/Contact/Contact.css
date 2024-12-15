@@ -24,20 +24,16 @@
   height: 40px;
   border-radius: 10px;
   outline-style: none;
-  outline: none;
   border: 2px solid rgb(133, 129, 129);
   background: none !important;
-  color: var(--light);
 }
 
 .contactWrapper textarea {
   height: 10rem;
   border-radius: 10px;
   outline-style: none;
-  outline: none;
   border: 2px solid rgb(133, 129, 129);
   background: none !important;
-  color: var(--light);
 }
 
 .contactWrapper button {

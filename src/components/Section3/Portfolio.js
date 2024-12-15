@@ -5,9 +5,10 @@ import "./Portfolio.css";
 
 function Portfolio() {
   return (
-    <div className="portfolio" id="portfolio">
+      <div id="portfolio">
+    <div className="portfolio" >
       <div className="portfolio-container">
-        <h2>Projects I've Worked On</h2>
+        <h2 className="font-bold text-2xl my-3">Projects I've Worked On</h2>
         <div className="project-section">
           <PortfolioProjects items={4} />
         </div>
@@ -16,6 +17,7 @@ function Portfolio() {
         </Link>
       </div>
     </div>
+      </div>
   );
 }
 

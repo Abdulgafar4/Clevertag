@@ -1,10 +1,15 @@
-:root {
-  --primary: #d61c4e;
-  --dark: #060607;
-  --light: rgb(255, 255, 255);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  --pointer: url('./images/cursor.svg'), auto;
-  --pointer-OL: url('./images/external-pointer.svg'), auto;
+
+:root {
+  --primary:#00bfa6;
+  --dark: #060607;
+  --light: rgb(245, 245, 245);
+
+  --pointer: url("./images/cursor.svg"), auto;
+  --pointer-OL: url("./images/external-pointer.svg"), auto;
 }
 
 ::-moz-selection {
@@ -17,17 +22,19 @@ body {
   font-family: "Maven Pro", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor: url('./images/pointer.svg'), auto;
+  cursor: url("./images/pointer.svg"), auto;
 
-  background-color: var(--dark);
-  color: var(--light);
+  background-color: var(--light);
+  color: var(--dark);
 }
 
-a, Link {
+a,
+Link {
   cursor: var(--pointer);
+  color: var(--primary);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
