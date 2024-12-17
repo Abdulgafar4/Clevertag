@@ -42,18 +42,20 @@ export default function Nav() {
   );
 
   return (
-    <div className="navbar">
-      <div className="logo-container">
-        <a href="/">Clevertag</a>
-      </div>
-      <div className="nav-icon-container">
-        {socialIcons.map((icon, index) => (
-          <div key={index}>{icon}</div>
-        ))}
-      </div>
+    <div className="flex justify-center mx-auto">
+      <div className="navbar max-w-[1700px]" style={{ borderRadius: "50px" }}>
+        <div className="logo-container">
+          <a href="/">Clevertag</a>
+        </div>
+        <div className="nav-icon-container">
+          {socialIcons.map((icon, index) => (
+            <div key={index}>{icon}</div>
+          ))}
+        </div>
 
-      {hamburger}
-      {navMenu && dropDown}
+        {hamburger}
+        {navMenu && dropDown}
+      </div>
     </div>
   );
 }

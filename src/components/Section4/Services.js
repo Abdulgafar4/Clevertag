@@ -48,11 +48,14 @@ function Services() {
   ];
 
   return (
-    <div className="service-container" id="service">
+    <div className="service-container mx-auto max-w-[1300px]" id="service">
       <h2 className="font-bold text-2xl my-3">My Frontend Toolkit</h2>
       <div className="service-cards-container">
         {serviceList.map(({ icon, title }) => (
-          <div className="service-card flex flex-col items-center justify-center" key={icon}>
+          <div
+            className="service-card flex flex-col items-center justify-center"
+            key={icon}
+          >
             <div className="service-card-icon">{icon}</div>
             <h3>{title}</h3>
           </div>
