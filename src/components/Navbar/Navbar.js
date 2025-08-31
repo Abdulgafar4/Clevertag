@@ -1,48 +1,19 @@
 import "./Navbar.css";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-
-export const socialIcons = [
-  <a
-    href="https://www.linkedin.com/in/clevertag/"
-    target="_blank"
-    rel="noreferrer"
-    className="nav-icon"
-  >
-    <FaLinkedinIn />
-  </a>,
-  <a
-    href="https://github.com/Abdulgafar4"
-    target="_blank"
-    rel="noreferrer"
-    className="nav-icon"
-  >
-    <FaGithub />
-  </a>,
-];
-
 export const navItems = [
   {
     name: "Home",
-    id: "#",
+    id: "/",
   },
   {
-    name: "Clients",
-    id: "#client",
+    name: "About",
+    id: "/about",
   },
   {
-    name: "Services",
-    id: "#service",
+    name: "Works",
+    id: "/portfolio",
   },
   {
-    name: "Projects",
-    id: "#portfolio",
-  },
-  {
-    name: "Testimonials",
-    id: "#testmonial",
-  },
-  {
-    name: "Message Me",
-    id: "#contact",
+    name: "Contact",
+    id: "/contact",
   },
 ];

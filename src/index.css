@@ -2,36 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-  --primary:#00bfa6;
-  --dark: #060607;
-  --light: rgb(245, 245, 245);
-
-  --pointer: url("./images/cursor.svg"), auto;
-  --pointer-OL: url("./images/external-pointer.svg"), auto;
-}
-
-::-moz-selection {
-  color: var(--dark);
-  background-color: var(--primary);
+  --primary: #000000;
+  --dark: #000000;
+  --light: #ffffff;
 }
 
 body {
   margin: 0;
-  font-family: "Maven Pro", sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor: url("./images/pointer.svg"), auto;
-
   background-color: var(--light);
   color: var(--dark);
 }
 
 a,
 Link {
-  cursor: var(--pointer);
   color: var(--primary);
+  text-decoration: none;
 }
 
 code {
