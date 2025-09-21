@@ -1,10 +1,7 @@
-import React from "react";
-import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
       <div className="flex flex-col items-center p-8 mx-auto px-4 py-16  md:py-24 my-16">
-
 
                   <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-gray-600 leading-tight">
                       Hi 👋 I'm
