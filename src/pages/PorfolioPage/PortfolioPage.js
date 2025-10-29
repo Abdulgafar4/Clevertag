@@ -6,7 +6,7 @@ function PortfolioPage() {
   return (
     <div className='pp-container'>
       <h1>
-        Take a look at our projects <br /> this is a real project from all over the world.
+        Take a look at some of my projects.
       </h1>
       <PortfolioProjects />
     </div>
